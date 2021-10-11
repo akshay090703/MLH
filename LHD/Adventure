@@ -1,0 +1,29 @@
+while True:
+    answer = input("what game do you like to play?(yes/no)")
+
+    if answer.lower().strip():
+
+        answer = input("You are on crossroad so where do you like  go to left or right?")
+        if answer == "left":
+            answer = input("You encounter a monster so do you like to run or attack")
+
+            if answer == "attack":
+                print("That's not a great idea.")
+            else:
+                print("Good choice, you made it safely run from monster")
+
+                answer = input("You see a car and a plane what would you like to take? (car/plane)")
+
+                if answer == "plane":
+                    print("Unfortunately you do not know how to fly")
+                else:
+                    print("You won!")
+
+        elif answer == "right":
+            print("You walk aimlessely and fall on a patch of ice. You injured your leg and can not continue")
+
+        else:
+            print("Invalid choice, you lost")
+    else:
+            print("That's too bad")
+            break
